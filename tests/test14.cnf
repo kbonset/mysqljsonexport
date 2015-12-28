@@ -1,0 +1,5 @@
+[jsonexport]
+include=test-init.cnf
+include=cretab3.cnf
+table=jsontab3
+sql-where-suffix=jsoncol1 <= 10

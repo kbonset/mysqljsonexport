@@ -1,0 +1,9 @@
+mysqljsonexport Changelog
+
+1.2 - 2013-01-04
+================
+Added the ability to export as a single JSON arrat in a file.
+
+1.0 - 2012-06-05
+================
+Started on first version

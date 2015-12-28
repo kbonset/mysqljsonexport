@@ -1,0 +1,4 @@
+[jsonexport]
+sql-init=DROP DATABASE IF EXISTS jsontest
+sql-init=CREATE DATABASE jsontest
+skip-timing

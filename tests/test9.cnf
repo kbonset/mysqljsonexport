@@ -1,0 +1,6 @@
+[jsonexport]
+include=test-init.cnf
+include=cretab2.cnf
+table=jsontab2
+batch-size=10
+col-value=coldummy1=10

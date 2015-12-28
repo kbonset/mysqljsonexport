@@ -1,0 +1,6 @@
+[jsonexport]
+include=test-init.cnf
+include=cretab3.cnf
+table=jsontab3
+skip-col=jsoncol1
+skip-col=jsoncol2

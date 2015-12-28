@@ -1,0 +1,15 @@
+[jsonexport]
+sql-init=DROP TABLE IF EXISTS jsontest.jsontab7
+sql-init=CREATE TABLE IF NOT EXISTS jsontest.jsontab7(id INT NOT NULL PRIMARY KEY, \
+  value CHAR(20))
+
+sql-init=INSERT INTO jsontest.jsontab7 VALUES(1, 'Row 1')
+sql-init=INSERT INTO jsontest.jsontab7 VALUES(2, '')
+sql-init=INSERT INTO jsontest.jsontab7 VALUES(3, 'Row 3')
+sql-init=INSERT INTO jsontest.jsontab7 VALUES(4, '')
+sql-init=INSERT INTO jsontest.jsontab7 VALUES(5, 'Row 5')
+sql-init=INSERT INTO jsontest.jsontab7 VALUES(6, 'Row 6')
+sql-init=INSERT INTO jsontest.jsontab7 VALUES(7, NULL)
+sql-init=INSERT INTO jsontest.jsontab7 VALUES(8, NULL)
+sql-init=INSERT INTO jsontest.jsontab7 VALUES(9, 'Row 9')
+sql-init=INSERT INTO jsontest.jsontab7 VALUES(10, '')

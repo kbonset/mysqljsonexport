@@ -1,0 +1,6 @@
+[jsonload]
+database=user
+table=users
+col-value=group=57
+col-name-map=id=_id
+file=users.json

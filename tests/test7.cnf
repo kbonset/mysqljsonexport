@@ -1,0 +1,7 @@
+[jsonexport]
+include=test-init.cnf
+include=cretab1.cnf
+table=jsontab1
+skip-auto-batch
+batch-size=10
+batch-col=nosuchcol

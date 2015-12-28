@@ -1,0 +1,4 @@
+[jsonexport]
+include=test-init.cnf
+include=cretab1.cnf
+table=jsontab1
