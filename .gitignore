@@ -1,0 +1,9 @@
+.deps/
+Makefile
+config.h
+config.log
+config.status
+mysqljsonexport
+stamp-h1
+tests/Makefile
+
