@@ -1560,12 +1560,12 @@ char *json_escape(char *pStr, char *pRet, unsigned int *pnLen)
          else if(*pStr == '\t')
             *pTmp++ = 't';
          }
-// Any control character, except the ones handled above, use the \uNNNN notation.
-      else if(*pStr < 0x1F || *pStr == 0x7F)
+// Any other control or 8-bit non-ASCII character, use the \uNNNN notation.
+      else if(*pStr <= 0x1F || *pStr >= 0x7F)
          {
          *pTmp++ = '\\';
          *pTmp++ = 'u';
-         sprintf(pTmp, "%04x", (int) *pStr);
+         sprintf(pTmp, "%04X", (unsigned char) *pStr);
          pTmp += 4;
          }
       else
@@ -1594,7 +1594,7 @@ unsigned int json_len_escaped(char *pStr)
       if(*pStr == '\\' || *pStr == '"' || *pStr == '/' || *pStr == '\b'
         || *pStr == '\f' || *pStr == '\n' || *pStr == '\r' || *pStr == '\t')
          nLen++;
-      else if(*pStr < 0x1F || *pStr == 0x7f)
+      else if(*pStr <= 0x1F || *pStr >= 0x7F)
          nLen += 5;
       }
 
